@@ -1,0 +1,291 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+:root
+{
+    --headerSize: 45vh;
+    --navSize: 40vh;
+    --footerSize: 20vh;
+}
+
+@font-face 
+{
+    font-family: 'Spotify';
+    src: url(./Gilroy-Light.ttf);
+}
+
+@font-face 
+{
+    font-family: 'SpotifyBold';
+    src: url(./Gilroy-Bold.ttf);
+}
+
+
+.italicBolder
+{
+    font-style: italic;
+}
+
+.bolder
+{
+    font-weight: bold;
+}
+
+body
+{
+    background-color: rgb(227, 236, 236);
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 100vh; */
+
+    font-family: 'Spotify', Arial;
+}
+
+.container
+{
+    width: 100vw;
+}
+
+header
+{
+    max-width: 100vw;
+    min-height: var(--headerSize);
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header img
+{
+    width: 3.5rem;
+    margin: 1rem;
+}
+
+.title
+{
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+nav
+{
+    max-width: 100vw;
+    background-image: url(./imagenes/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 19%;
+    background-size: cover;
+
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+
+    min-height: var(--navSize);
+    font-size: 2rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul
+{
+    text-align: center;
+}
+
+nav ul li
+{
+    list-style-type: none;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    border: 0.2rem black solid;
+    line-height: 8rem;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+}
+
+nav ul li a:hover:not(.principal)
+{
+    background-color: rgb(100, 100, 100);
+    /* mix-blend-mode: hue; */
+    /* mix-blend-mode: darken; */
+    /* mix-blend-mode: screen; */
+    /* mix-blend-mode: soft-light; */
+    /* mix-blend-mode: color; */
+    /* mix-blend-mode: exclusion; */
+    /* mix-blend-mode: color-burn; */
+    mix-blend-mode: luminosity;
+
+    /* border: 0.3rem black solid; */
+}
+
+main
+{
+    max-width: 100vw;
+    min-height: calc(100vh - var(--headerSize) - var(--navSize) - var(--footerSize));
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+article
+{
+    display: flex;
+
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 90%;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* font-family: 'Spotify'; */
+
+
+    margin: 4rem 0;
+    padding: 2rem;
+    /* background-color: rgb(205, 173, 10); */
+    font-size: 2rem;
+
+    border-radius: 1rem;
+    /* box-shadow: 6px 3px 31px -8px rgba(0,0,0,1); */
+}
+
+.juanId, .miguelId
+{
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.juanId ul li, .miguelId ul li
+{
+    list-style-type: none;
+}
+
+.juanId ul li a, .miguelId ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.igLink
+{
+    text-decoration: none;
+    color:black;
+    margin: 0.5rem;
+}
+
+.igLink:hover
+{
+    color: white;
+}
+
+.juanImg, .miguelImg
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.juanImg span, .miguelImg span
+{
+    margin: 1rem;
+    font-family: 'SpotifyBold', Arial;
+}
+
+.juanImg img, .miguelImg img
+{
+    width: 10rem;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+}
+
+
+
+footer
+{
+    display: flex;
+    flex-flow: column wrap;
+    
+    max-width: 100vw;
+    min-height: var(--footerSize);
+    background-color: black;
+    color: white;
+}
+
+.footerLogo
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    align-self: center;
+
+    margin: 3rem;
+}
+
+.follow
+{
+    margin: 2rem;
+    align-self: center;
+}
+
+.follow h2
+{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.follow a
+{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1.5rem;
+
+    background-color: rgb(53, 53, 53);
+
+    text-decoration: none;
+    color: white;
+}
+
+.follow a:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.copy
+{
+    padding: 1rem 5rem;
+    text-align: center;
+    width: 100%;
+    /* align-content: flex-end; */
+
+    font-size: 1.2rem;
+    background-color: rgb(31, 31, 31);
+}
+
+.contact
+{
+    background-color: black;
+    color: white;
+}
