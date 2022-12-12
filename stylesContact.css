@@ -120,7 +120,7 @@ nav ul li a
     border-radius: 2.5rem;
 }
 
-nav ul li a:hover:not(.principal)
+nav ul li a:hover:not(.contact)
 {
     background-color: rgb(100, 100, 100);
     /* mix-blend-mode: hue; */
@@ -260,6 +260,7 @@ footer
     font-size: 2rem;
     padding: 1rem;
     margin: 1.5rem;
+    border-radius: 50%;
 
     background-color: rgb(53, 53, 53);
 
