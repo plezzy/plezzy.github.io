@@ -1,0 +1,111 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+html
+{
+    width: 100vw;
+
+}
+
+body
+{
+    margin: auto;
+    width: 100%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: rgb(255, 246, 235);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.header
+{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(255, 246, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon
+{
+    color: black;
+    text-decoration: none;
+}
+
+.nav
+{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-element
+{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.title-container
+{
+    width: 88%;
+    height: 25%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.title
+{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    height: max-content;
+    text-align: center;
+}
+
+.text-container
+{
+    width: 100%;
+    font-size: 17px;
+    padding: 40px 30px;
+}
+
+.list-text
+{
+    width: 100%;
+    padding: 40px 30px;
+}
+
+.lista
+{
+    /* margin: 20px 0; */
+    font-weight: 700;
+}
+
+.list-element
+{
+    margin: 40px;
+    font-size: 15px;
+}
