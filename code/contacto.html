@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../media/page-icony.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+    <script src="https://kit.fontawesome.com/beff49b37c.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./styles/contacto.css">
+    
+    <title>Hacienda Cantalagua</title>
+</head>
+<body>
+    <a id="scrollUpButton" class="scroll-up__button" href="#"><i class="scroll-up_icon fa-solid fa-circle-up"></i></a>
+    <a class="scroll-up__button scroll-up__button--wsp" href="https://wa.link/u0llmh"><i class="scroll-up__icon fa-brands fa-whatsapp"></i></a>
+
+    <header class="header">
+
+        <div class="header__container">
+            <div class="header__menu">
+
+                <i class="header__icon header__menu-icon fa-solid fa-bars"></i>
+                <ul class="header__nav">
+    
+                    <i class="header__exit-icon fa-regular fa-circle-xmark"></i>
+                    
+                    <div class="header__nav-container">
+                        <a href="../index.html" class="header__nav-element">
+                            <span class="header__nav-span">Inicio</span>
+                        </a>
+                        <a href="./catalogo.html" class="header__nav-element">
+                            <span class="header__nav-span">Catálogo</span>
+                        </a>
+                        <a href="./nosotros.html"  class="header__nav-element">
+                            <span class="header__nav-span">Nosotros</span>
+                        </a>
+                        <a href="#"  class="header__nav-element">
+                            <span class="header__nav-span"><b style="font-weight: 900;">Contacto</b></span>
+                        </a>
+                    </div>
+                    
+                    <div class="header__nav-social">
+                        <a target="_blank" href="https://www.instagram.com/hacienda__cantalagua" class="header__nav-link">Visita nuestra página de instagram: <span>@hacienda__cantalagua</span></a>
+                    </div>
+
+                </ul>
+    
+            </div>
+            <div class="header__logo">
+                <a href="../index.html">
+                    <img class="header__logo-img" src="../media/page-icony.png" alt="">
+                </a>
+            </div>
+    
+            <div class="header__social">
+                <a target="_blank" href="https://www.instagram.com/hacienda__cantalagua" class="header__icon-link">
+                    <i class="header__social-instagram fa-brands fa-instagram header__icon"></i>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="body-container">
+
+       <section class="title__section">
+
+            <h1 class="title">Contáctanos</h1>
+            <p class="title__subtitle">Déjanos un correo o escríbenos en Instagram</p>
+
+       </section>
+
+       <div class="div__container">
+
+            <section class="form__section">
+
+                <h2 class="form__title">Te responderemos lo más rápido posible</h2>
+                <h3 class="form__advise">* Obligatorio</h3>
+
+                <form id="form-container" class="form__container"
+                    action="https://formspree.io/f/xpwzwznb"
+                    method="POST">
+
+                    <div class="form__item" id="form__item-name">
+
+                        <label class="form__label" for="name">Nombre <span style='color: #f1c422;'>*</span></label>
+                        <div class="form__input-container">
+                            <input required placeholder="Sergio Perdomo" name="name" id="name" type="text" class="form__input">
+                            <i class="form__verification-state fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="form__input-error">Este campo debe tener entre 4 y 16 letras, solo se admiten letras</p>
+                    </div>
+
+                    <div class="form__item" id="form__item-email">
+
+                        <label class="form__label" for="email">Correo Electrónico <span style='color: #f1c422;'>*</span></label>
+                        <div class="form__input-container">
+                            <input required placeholder="correo@email.com" name="email" id="email" type="email" class="form__input">
+                            <i class="form__verification-state fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="form__input-error">El correo no puede contener espacios, solo se admiten letras, números, puntos, guiones y guión bajo.</p>
+                    </div>
+
+                    <div class="form__item" id="form__item-subject">
+
+                        <label class="form__label" for="subject">Asunto <span style='color: #f1c422;'>*</span></label>
+                        <div class="form__input-container">
+                            <input required list="subjects" name="subject" id="subject" type="text" class="form__input">
+                            <!-- <i class="form__verification-state fa-solid fa-circle-xmark"></i> -->
+                        </div>
+                        <datalist id="subjects">
+                            <option value="Consultar información"></option>
+                            <option value="Sugerencia"></option>
+                            <option value="Queja/Reclamo"></option>
+                        </datalist>
+                        <p class="form__input-error form__input-error--advise">Escribe el propósito de tu correo</p>
+                    </div>
+
+                    <div class="form__item" id="form__item-message">
+
+                        <label class="form__label" for="message">Mensaje <span style='color: #f1c422;'>*</span></label>
+                        <div class="form__input-container">
+                            <textarea required placeholder="Escribe aquí tus comentarios" name="message" id="message" 
+                            cols="30" rows="8" class="form__input"></textarea>
+                            <!-- <i class="form__verification-state fa-solid fa-circle-xmark"></i> -->
+                        </div>
+                        <p class="form__input-error form__input-error--advise">Escribe el cuerpo de tu correo</p>
+                    </div>
+
+                    <div id="form__advertisement" class="form__advertisement">
+                        <p><i class="fa-solid fa-circle-exclamation"></i>Algo ha salido mal. Verifica tu formulario y completa todos los campos</p>
+                    </div>
+                    
+                    <div class="form__item form__item-button">
+                        <button type="submit" class="form__button">Enviar</button>
+                        <p class="form__sent">Correo enviado correctamente.</p>
+                    </div>
+
+                </form>
+
+                
+
+            </section>
+
+            <section class="info__section">
+
+                <div class="info__container">
+                    <h2 class="info__h2">CONTACTO</h2>
+                    <ul class="info__ul">
+                        <li class="info__li">
+                            <i class="info__icon fa-brands fa-square-whatsapp"></i>
+                            <p class="info__p">+57 321 9926541</p>
+                        </li>
+                        <li class="info__li">
+                            <i class="info__icon fa-solid fa-envelope"></i>
+                            <p class="info__p">perdomosergio999@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="info__border" class="info__container">
+                    <h2 class="info__h2">REDES SOCIALES</h2>
+                    <ul class="info__ul">
+                        <li class="info__li">
+                            <a href="https://www.instagram.com/hacienda__cantalagua/">
+                                <i class="info__icon fa-brands fa-square-instagram"></i>
+                                <p class="info__p">@hacienda__cantalagua</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+       </div>
+        
+
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">Sitio Web Oficial Hacienda Cantalagua &copy; 2024. Todos los derechos reservados. Diseñado por juan.snchez_ </p>
+    </footer>
+
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/contacto.js"></script>
+</html>
