@@ -137,7 +137,7 @@ body
                 width: 100%;
                 /* max-width: 350px; */
                 height: 100%;
-                background-color: rgba(0, 0, 0, 0.842);
+                background-color: rgba(0, 0, 0, 0.96);
                 /* backdrop-filter: blur(15px); */
                 text-align: left;
                 list-style-type: none;
@@ -314,11 +314,12 @@ body
 .location-section
 {
     width: 100%;
-    /* height: 80vh; */
     background-image: url("../../media/location-section-bg.jpg");
-    background-color: #00000089;
+    background-image: url("../../gallery-media/img12.jpeg");
+    background-position: center;
+    background-color: #000000b3;
     background-blend-mode: soft-light;
-    
+    background-size: cover;
     color: var(--logo-2-white);
 }
 
@@ -333,21 +334,17 @@ body
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    /* backdrop-filter: blur(4px); */
 }
 
 .location-map
 {
     margin-bottom: 30px;
-    /* border-left: 5px solid whitesmoke;
-    border-right: 5px solid whitesmoke;
-    padding: 0px 10px 0px 10px; */
 }
 
-    .location-ext   
-    {
-        border-radius: 20px;
-    }
+.location-ext   
+{
+    border-radius: 20px;
+}
 
 .location-info
 {
@@ -742,6 +739,18 @@ body
         margin-left: 40px;
     }
 
+    .location-title
+    {
+        font-size: 4.2rem;
+        margin-bottom: 15px;
+    }
+
+    .location-text
+    {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
     .scroll-up__button
     {
         bottom: 30px;
@@ -829,7 +838,7 @@ body
 .header--shadow
 {
     box-shadow: 0px -3px 22px 0px rgba(0,0,0,0.75);
-    background-color: #f1e9dcd7;
+    background-color: #f1e9dcf6;
 }
 
 .header--text-color
